@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Hardware y Periféricos</title>
+    <link rel="stylesheet" href="styles.css">    
+    <script src="carrito.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Tienda de Hardware y Periféricos</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Componentes y Periféricos</a></li>
+                <li><a href="ofertas.html">Ofertas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="#" id="carrito-link" onclick="CarritoDeCompras()"></a></li>
+                <li><a href="formulario.html">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="productos">
+            <h2>Productos Destacados</h2>
+            <div class="producto">
+                <img src="../ParcialPP/Imagenes/teclado1.png" alt="Teclado Mecánico Corsair  K55" title="Teclado Mecánico Corsair K55 RGB">
+                <h3>Teclado Mecánico Corsair  K55</h3>
+                <p>$50.000</p>
+                <button onclick="Añadir('Teclado Mecánico Corsair  K55', 50000)">Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="../ParcialPP/Imagenes/mouse1.png" alt="Mouse Gamer Logitech G203" title="Mouse Logitech G203 blue">
+                <h3>Mouse Gamer Logitech G203</h3>
+                <p>$35.000</p>
+                <button onclick="Añadir('Mouse Gamer Logitech G203', 35000)">Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="../ParcialPP/Imagenes/monitor1.png" alt="Monitor LG 165hz 4K 27'" title="Monitor gamer LG 4K 165Hz de 27 pulgadas IPS">
+                <h3>Monitor LG 165hz 4K 27'</h3>
+                <p>$300.000</p>
+                <button onclick="Añadir('Monitor LG 165hz 4K 27', 300000)">Carrito</button>
+            </div>
+        </section>
+        <aside>
+            <h2>Ofertas Especiales</h2>
+            <p>Descuentos en varios productos de hasta el 50%.</p>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2024 Tienda de Hardware y Periféricos. Todos los derechos reservados.</p>
+    </footer>
+
+    <div id="carrito-modal" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar-carrito" onclick="CarritoDeCompras()">&times;</span>
+            <h2>Carrito de Compras</h2>
+            <div id="productos-carrito"></div>
+            <p id="precio-total"></p>
+            <button onclick="FinalizarCompra()">Finalizar Compra</button>
+            <button onclick="VaciarCarrito()">Vaciar Carrito</button>
+        </div>
+    </div>
+</body>
+</html>

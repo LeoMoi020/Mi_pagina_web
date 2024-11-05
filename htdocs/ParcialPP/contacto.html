@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="styles2.css">
+    <script src="carrito.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Tienda de Hardware y Periféricos</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Componentes y Periféricos</a></li>
+            <li><a href="ofertas.html">Ofertas</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="#" id="carrito-link" onclick="CarritoDeCompras()"></a></li>
+            <li><a href="formulario.html">Registro</a></li>
+        </ul>
+    </nav>
+</header>
+    <h2>Dejanos tu contacto</h2>
+    <div>
+        <form class="row g-3">
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Calle</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Siempre Viva">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress2" class="form-label">Calle 2</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Departamento, estudio, o piso">
+            </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">Localidad</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">País</label>
+              <select id="inputState" class="form-select">
+                <option selected>Elegir...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+              <label for="inputZip" class="form-label">Código postal</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+          </form>   
+    </div> 
+      <footer>
+        <p>&copy; 2024 Tienda de Hardware y Periféricos. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

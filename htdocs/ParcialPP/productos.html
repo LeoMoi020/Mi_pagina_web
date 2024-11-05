@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="styles2.css">
+    <script src="carrito.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Tienda de Hardware y Periféricos</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Componentes y Periféricos</a></li>
+                <li><a href="ofertas.html">Ofertas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="#" id="carrito-link" onclick="CarritoDeCompras()"></a></li>
+                <li><a href="formulario.html">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+<h2>Productos</h2>
+    <div class="productos" > 
+        <div class="artículo" >
+            <img src="../ParcialPP/Imagenes/monitor1.png" alt="Monitor gamer LG 4k" title="Monitor gamer LG 4k 165Hz de 27' panel IPS">
+            <h3>Monitor LG 4k 165Hz 27'</h3>
+            <p>$300.000</p>
+            <button onclick="Añadir('Monitor LG 4k 165Hz 27', 300000)">Carrito</button>
+        </div>
+        <div class="artículo" >
+            <img src="../ParcialPP/Imagenes/monitor2.png" alt="Monitor Samsung 22' 75Hz" title="Monitor Samsung de 22' panel IPS">
+            <h3>Monitor Samsung de 22'</h3>
+            <p>$150.000</p>
+            <button onclick="Añadir('Monitor Samsung de 22', 150000)">Carrito</button>
+        </div>
+        <div class="artículo" >
+            <img src="../ParcialPP/Imagenes/auriculares1.png" alt="Headset HyperX Cloud II" title="Headset HyperX Cloud II 7.1">
+            <h3>HyperX Cloud II 7.1</h3>
+            <p>$60.000</p>
+            <button onclick="Añadir('HyperX Cloud II 7.1', 60000)">Carrito</button>
+        </div>
+        <div class="artículo" >
+            <img src="../ParcialPP/Imagenes/auriculares2.png" alt="Headset Logitech G733" title="Headset Logitech G733 Wireless RGB lila">
+            <h3>Logitech G733 Wireless</h3>
+            <p>$70.000</p>
+            <button onclick="Añadir('Logitech G733 Wireless', 70000)">Carrito</button>
+        </div>
+        <div class="artículo" >
+            <img src="../ParcialPP/Imagenes/mouse1.png" alt="Mouse Logitech G203" title="Mouse Logitech G203 blue">
+            <h3>Mouse Logitech G203</h3>
+            <p>$30.000</p>
+            <button onclick="Añadir('Mouse Logitech G203', 30000)">Carrito</button>
+        </div>
+        <div class="artículo" >
+            <img src="../ParcialPP/Imagenes/mouse2.png" alt="Mouse Redragon Storm Elite" title="Mouse Redragon Storm Elite White m988 RGB">
+            <h3>Mouse Redragon Storm Elite White</h3>
+            <p>$35.000</p>
+            <button onclick="Añadir('Mouse Redragon Storm Elite White', 35000)">Carrito</button>
+        </div>
+        <div class="artículo" >
+            <img src="../ParcialPP/Imagenes/teclado1.png" alt="Teclado Corsair K55" title="Teclado Mecánico Corsair K55 RGB">
+            <h3>Teclado Mecánico Corsair K55</h3>
+            <p>$50.000</p>
+            <button onclick="Añadir('Teclado Mecánico Corsair  K55', 50000)">Carrito</button>
+        </div>
+        <div class="artículo" >
+            <img src="../ParcialPP/Imagenes/teclado2.png" alt="Teclado Mecánico Redragon Draconic" title="Teclado Mecánico Redragon Draconic K530 RGB">
+            <h3>Teclado Redragon Draconic</h3>
+            <p>$65.000</p>
+            <button onclick="Añadir('Teclado Redragon Draconic', 65000)">Carrito</button>
+        </div>
+        <div class="artículo" >
+            <img src="../ParcialPP/Imagenes/ram1.png" alt="X2 Memoria RAM 8gb Corsair" title="X2 Memoria RAM DDR4 Vengance 8gb Corsair RGB 3600MHz">
+            <h3>Memoria Vengance 8gb Corsair(X2)</h3>
+            <p>$60.000</p>
+            <button onclick="Añadir('Memoria Vengance 8gb Corsair X2', 60000)">Carrito</button>
+        </div>
+        <div class="artículo" >
+            <img src="../ParcialPP/Imagenes/ram2.png" alt="Memoria RAM 8gb Fury Beast" title="Memoria RAM DDR4 8gb Fury Beast RGB 3200MHz">
+            <h3>Memoria RAM 8gb Fury Beast</h3>
+            <p>$30.000</p>
+            <button onclick="Añadir('Memoria RAM 8gb Fury Beast', 30000)">Carrito</button>
+        </div>
+        <div class="artículo" >
+            <img src="../ParcialPP/Imagenes/case1.png" alt="Gabinete Thermaltake S200" title="Gabinete Thermaltake S200 Tg ARGB Vidrio coolerX3 Blanco">
+            <h3>Gabinete Thermaltake S200 Blanco</h3>
+            <p>$130.000</p>
+            <button onclick="Añadir('Gabinete Thermaltake S200 Blanco', 130000)">Carrito</button>
+        </div>
+        <div class="artículo" >
+            <img src="../ParcialPP/Imagenes/case2.png" alt="Gabinete Gamer KJ Z399" title="Gabinete Gamer KJ Z399 4 Coolers RGB">
+            <h3>Gabinete Gamer KJ RGB</h3>
+            <p>$80.000</p>
+            <button onclick="Añadir('Gabinete Gamer KJ RGB', 80000)">Carrito</button>
+        </div>
+        <div class="artículo" >
+            <img src="../ParcialPP/Imagenes/coolers.png" alt="Set 3x Coolers 120mm" title="Set 3x Coolers Pwm 120mm ARGB Blancos">
+            <h3>Set 3x Coolers Blancos</h3>
+            <p>$70.000</p>
+            <button onclick="Añadir('Set 3x Coolers Blancos', 70000)">Carrito</button>
+        </div>
+        <div class="artículo" >
+            <img src="../ParcialPP/Imagenes/cpu1.png" alt="Procesador Intel Core i5 10400 Comet Lake 1200" title="Procesador Intel Core i5 10400 4.3 Ghz Comet Lake 1200">
+            <h3>Procesador Intel i5 10400</h3>
+            <p>$170.000</p>
+            <button onclick="Añadir('Procesador Intel i5 10400', 170000)">Carrito</button>
+        </div>
+        <div class="artículo" >
+            <img src="../ParcialPP/Imagenes/cpu2.png" alt="Procesador Amd Ryzen 7 5700g" title="Procesador Amd Ryzen 7 5700g Am4">
+            <h3>Procesador Ryzen 7 5700g</h3>
+            <p>$260.000</p>
+            <button onclick="Añadir('Procesador Ryzen 7 5700g', 260000)">Carrito</button>
+        </div>
+        <div class="artículo" >
+            <img src="../ParcialPP/Imagenes/disco1.png" alt="Ssd 500gb Kingston Nv2 M2" title="Disco Ssd 500gb Kingston Nv2 M2 Gen4">
+            <h3>Ssd 500gb Kingston Nv2 M2</h3>
+            <p>$80.000</p>
+            <button onclick="Añadir('Ssd 500gb Kingston Nv2 M2', 80000)">Carrito</button>
+        </div>
+        <div class="artículo" >
+            <img src="../ParcialPP/Imagenes/disco2.png" alt="Disco HDD Seagate BarraCuda 2TB" title="Disco Rígido HDD Seagate BarraCuda 2TB">
+            <h3>Disco HDD Seagate 2TB</h3>
+            <p>$90.000</p>
+            <button onclick="Añadir('Disco HDD Seagate 2TB', 90000)">Carrito</button>
+        </div>
+        <div class="artículo" >
+            <img src="../ParcialPP/Imagenes/fuente1.png" alt="Fuente Corsair 650w 80 Plus Bronze" title="Fuente Corsair 650w Cv650 Negro 80 Plus Bronze">
+            <h3>Fuente Corsair 650w 80+ Bronze</h3>
+            <p>$90.000</p>
+            <button onclick="Añadir('Fuente Corsair 650w 80+ Bronze', 90000)">Carrito</button>
+        </div>
+        <div class="artículo" >
+            <img src="../ParcialPP/Imagenes/fuente2.png" alt="Fuente Asus ROG 1200W 80 plus Platinum" title="Fuente Asus ROG Thor 1200W 80 plus Platinum">
+            <h3>Fuente Asus ROG 1200W 80+ Platinum</h3>
+            <p>$500.000</p>
+            <button onclick="Añadir('Fuente Asus ROG 1200W 80+ Platinum', 500000)">Carrito</button>
+        </div>
+        <div class="artículo" >
+            <img src="../ParcialPP/Imagenes/gpu1.png" alt="Placa de video RTX 2060 Super Ventus" title="Placa de video MSI RTX 2060 Super Ventus">
+            <h3>MSI RTX 2060 Super Ventus</h3>
+            <p>$320.000</p>
+            <button onclick="Añadir('MSI RTX 2060 Super Ventus', 320000)">Carrito</button>
+        </div>
+        <div class="artículo" >
+            <img src="../ParcialPP/Imagenes/gpu2.png" alt="Gigabyte GeForce RTX 4060 Ti 16GB GDDR6" title="Gigabyte GeForce RTX 4060 Ti GAMING OC 16GB GDDR6 PCIe 4.0">
+            <h3>Gigabyte RTX 4060 Ti 16GB</h3>
+            <p>$560.000</p>
+            <button onclick="Añadir('Gigabyte RTX 4060 Ti 16GB', 560000)">Carrito</button>
+        </div>
+        <div class="artículo" >
+            <img src="../ParcialPP/Imagenes/mother1.png" alt="MOTHERBOARD GIGABYTE H510M" title="MOTHERBOARD GIGABYTE H510M S2H V2 1200 DDR4">
+            <h3>MOTHER GIGABYTE H510M</h3>
+            <p>$90.000</p>
+            <button onclick="Añadir('MOTHER GIGABYTE H510M', 90000)">Carrito</button>
+        </div>
+        <div class="artículo" >
+            <img src="../ParcialPP/Imagenes/mother2.png" alt="MOTHERBOARD GIGABYTE B550 AORUS PRO" title="MOTHERBOARD GIGABYTE AM4 B550 AORUS PRO">
+            <h3>MOTHER GIGABYTE B550 AORUS PRO</h3>
+            <p>$150.000</p>
+            <button onclick="Añadir('MOTHER GIGABYTE B550 AORUS PRO', 150000)">Carrito</button>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Tienda de Hardware y Periféricos. Todos los derechos reservados.</p>
+    </footer>
+
+    <div id="carrito-modal" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar-carrito" onclick="CarritoDeCompras()">&times;</span>
+            <h2>Carrito de Compras</h2>
+            <div id="productos-carrito"></div>
+            <p id="precio-total"></p>
+            <button onclick="FinalizarCompra()">Finalizar Compra</button>
+            <button onclick="VaciarCarrito()">Vaciar Carrito</button>
+        </div>
+    </div>
+
+</body>
+</html>
